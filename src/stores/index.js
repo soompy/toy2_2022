@@ -1,4 +1,7 @@
 import { Module, VuexModule, Mutation, Action, getModule } from 'vuex-module-decorators';
+// import { createStore } from "vuex";
+import { Counter } from "@/store/moduleA/Counter";
+import { moduleA } from "@/store/moduleA/moduleA";
 
 import store from '../index';
 
@@ -36,4 +39,7 @@ class ModuleA extends VuexModule {
   }
 }
 
-export default getModule(ModuleA);
+
+export default createStore({
+  modules: { Counter, moduleA }
+});
