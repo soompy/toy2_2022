@@ -1,6 +1,6 @@
 <template>
-  <div class="join">
-    <h1>This is an join page</h1>
+  <div class="community">
+    <h1>This is an about page</h1>
   </div>
 </template>
 
@@ -8,6 +8,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'JoinPage',
+  name: 'CommunityPage',
 })
 </script>
